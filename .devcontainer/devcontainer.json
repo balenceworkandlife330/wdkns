@@ -1,0 +1,13 @@
+{
+  "name": "wdkns-skills",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/ffmpeg:1": {},
+    "ghcr.io/devcontainers/features/latex:1": {}
+  },
+  "postCreateCommand": "pip install --no-cache-dir openai-whisper pdfkit markdown"
+}
